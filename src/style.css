@@ -100,7 +100,7 @@ nav {
 
 .hero-section {
   margin-top: 80px;
-  background: url("./Thor_Ragnarok_Teaser_14.png");
+  background: url("./images/Thor_Ragnarok_Teaser_14.png");
   width: 100%;
   /* height: 500px; */
   height: 65vh;
@@ -227,7 +227,7 @@ hr {
 /* #home-page-artwork { */
 .side-image {
   flex-grow: auto;
-  background: url("./Asgard_Fresco.png");
+  background: url("./images/Asgard_Fresco.png");
   background-size: cover;
   background-position: center;
 
