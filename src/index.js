@@ -16,20 +16,20 @@ function clearContent() {
 
 function setBackgroundPattern(page) {
     const bgClass = `${page}-page-bg`
-    document.body.classList.remove()
+    document.body.className = ''
     document.body.classList.add(bgClass)
 }
 
 homeButton.addEventListener('click', () => {
-    clearContent()
+    // clearContent()
     setBackgroundPattern('home')
-    loadHomePageContent(contentDivID)
+    // loadHomePageContent(contentDivID)
 })
 
-// menuButton.addEventListener('click', () => {
-//     clearContent()
-//     setBackgroundPattern('menu')
-// })
+menuButton.addEventListener('click', () => {
+    // clearContent()
+    setBackgroundPattern('menu')
+})
 
 
-loadHomePageContent(contentDivID)
+// loadHomePageContent(contentDivID)

@@ -54,6 +54,51 @@ body::selection {
     40px 40px;
 }
 
+.menu-page-bg {
+  background:
+    linear-gradient(
+      45deg,
+      #0000 calc(25% / 3),
+      #364c59 0 calc(50% / 3),
+      #0000 0 calc(250% / 3),
+      #364c59 0 calc(275% / 3),
+      #0000 0
+    ),
+    linear-gradient(
+      45deg,
+      #364c59 calc(25% / 3),
+      #0000 0 calc(50% / 3),
+      #364c59 0 25%,
+      #0000 0 75%,
+      #364c59 0 calc(250% / 3),
+      #0000 0 calc(275% / 3),
+      #364c59 0
+    ),
+    linear-gradient(
+      -45deg,
+      #0000 calc(25% / 3),
+      #364c59 0 calc(50% / 3),
+      #0000 0 calc(250% / 3),
+      #364c59 0 calc(275% / 3),
+      #0000 0
+    ),
+    linear-gradient(
+        -45deg,
+        #364c59 calc(25% / 3),
+        #0000 0 calc(50% / 3),
+        #364c59 0 25%,
+        #0000 0 75%,
+        #364c59 0 calc(250% / 3),
+        #0000 0 calc(275% / 3),
+        #364c59 0
+      )
+      #25353e;
+  background-size: 100px 100px;
+  background-position:
+    0 0,
+    50px 50px;
+}
+
 header {
   position: fixed;
   width: 100%;
@@ -167,6 +212,9 @@ nav {
   font-size: 1.6rem;
   font-family: var(--heading-font);
   color: var(--off-white);
+
+  letter-spacing: 2px;
+  transition: 0.5s ease-in-out;
 }
 
 hr {
@@ -185,7 +233,7 @@ hr {
 .section-content {
   font-size: 1.2rem;
   padding: 10px;
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
   color: var(--off-white-brown);
 }
 
@@ -198,6 +246,8 @@ hr {
   margin-left: auto;
   margin-right: auto;
   padding: 20px;
+
+  margin-bottom: 30px;
 }
 
 .section:nth-child(2n) {
@@ -213,7 +263,7 @@ hr {
 }
 
 .text-area {
-  max-width: max(500px, 50vw);
+  max-width: max(600px, 50vw);
 }
 
 .section:nth-child(2) {
@@ -243,4 +293,97 @@ hr {
 .side-image:hover {
   border-radius: 15px;
   box-shadow: 0 0 50px 0px var(--gold-shadow) inset;
+}
+
+.menu-section {
+  margin-top: 80px;
+}
+
+.menu-section .text-area {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+}
+
+.menu-section .section-heading {
+  color: var(--off-white);
+  padding: 0px 25px;
+}
+
+.menu-section .section-content {
+  width: 80%;
+}
+
+.dish-name,
+.dish-price {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 5px;
+}
+
+.dish-price::after {
+  content: "ᚠ";
+  font-size: 1.6rem;
+}
+
+.menu-item {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+
+  margin: 15px auto;
+  padding: 15px;
+  border-radius: 15px;
+
+  border-top: 2px solid var(--base-color);
+  border-bottom: 2px solid var(--base-color);
+
+  transition: 0.5s ease-in-out;
+}
+
+.menu-item:hover {
+  border-top: 2px solid var(--gold-light);
+  border-bottom: 2px solid var(--gold-shadow);
+
+  box-shadow: 0px 4px 15px var(--base-lightest) inset;
+}
+
+#menu-page-title {
+  background-color: transparent;
+  box-shadow: 0px 0px 50px var(--base-lightest) inset;
+
+  transition: 0.5s ease-in-out;
+}
+
+#menu-page-title:hover {
+  box-shadow:
+    0px 0px 50px var(--base-lightest) inset,
+    0px 0px 50px var(--gold-shadow);
+}
+
+#menu-page-title > .section-heading {
+  color: var(--gold);
+  text-shadow: 0px 0px 50px var(--base-lightest);
+}
+
+.menu-section .section:nth-child(2n) {
+  width: 85%;
+  /* width: clamp(50%, 80vw, 90vw); */
+  margin: 25px auto;
+}
+
+.menu-section .section:nth-child(2n) .section-heading {
+  padding-bottom: 10px;
+  border-bottom: 2px solid var(--gold);
+  border-radius: 15px;
+}
+
+.menu-section .section:hover:nth-child(2n) .section-heading {
+  color: var(--gold-light);
 }
