@@ -326,6 +326,10 @@ hr {
   gap: 5px;
 }
 
+.dish-name {
+  text-align: left;
+}
+
 .dish-price::after {
   content: "ᚠ";
   font-size: 1.6rem;

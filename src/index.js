@@ -1,5 +1,6 @@
 import './style.css'
 import { loadHomePageContent } from './pages/home-page'
+import { loadMenuPageContent } from './pages/menu-page'
 
 console.log("Hare Krishna!")
 
@@ -21,15 +22,16 @@ function setBackgroundPattern(page) {
 }
 
 homeButton.addEventListener('click', () => {
-    // clearContent()
+    clearContent()
     setBackgroundPattern('home')
-    // loadHomePageContent(contentDivID)
+    loadHomePageContent(contentDivID)
 })
 
 menuButton.addEventListener('click', () => {
-    // clearContent()
+    clearContent()
     setBackgroundPattern('menu')
+    loadMenuPageContent(contentDivID)
 })
 
 
-// loadHomePageContent(contentDivID)
+loadHomePageContent(contentDivID)

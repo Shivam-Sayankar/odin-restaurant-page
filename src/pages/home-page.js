@@ -1,8 +1,6 @@
 
 export function loadHomePageContent(id) {
 
-    document.body.classList.add('home-page-bg')
-
     console.log('Home Paged Loaded!')
     const contentDiv = document.getElementById(id)
 
