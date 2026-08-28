@@ -1,7 +1,7 @@
 
 export function loadHomePageContent(id) {
 
-    console.log('Home Paged Loaded!')
+    console.log('Home Page Loaded!')
     const contentDiv = document.getElementById(id)
 
 

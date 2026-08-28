@@ -1,6 +1,7 @@
 import './style.css'
 import { loadHomePageContent } from './pages/home-page'
 import { loadMenuPageContent } from './pages/menu-page'
+import { loadAboutPageContent } from './pages/about-page'
 
 console.log("Hare Krishna!")
 
@@ -33,5 +34,10 @@ menuButton.addEventListener('click', () => {
     loadMenuPageContent(contentDivID)
 })
 
+aboutButton.addEventListener('click', () => {
+    clearContent()
+    setBackgroundPattern('about')
+    loadAboutPageContent(contentDivID)
+})
 
-// loadHomePageContent(contentDivID)
+loadHomePageContent(contentDivID)
