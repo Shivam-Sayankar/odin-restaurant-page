@@ -34,4 +34,4 @@ menuButton.addEventListener('click', () => {
 })
 
 
-loadHomePageContent(contentDivID)
+// loadHomePageContent(contentDivID)

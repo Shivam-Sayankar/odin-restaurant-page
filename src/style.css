@@ -99,6 +99,19 @@ body::selection {
     50px 50px;
 }
 
+.about-page-bg {
+  background:
+    radial-gradient(27% 29% at right, #0000 83%, #364c59 85% 99%, #0000 101%)
+      calc(50px / 2) 50px,
+    radial-gradient(27% 29% at left, #0000 83%, #364c59 85% 99%, #0000 101%)
+      calc(50px / -2) 50px,
+    radial-gradient(29% 27% at top, #0000 83%, #364c59 85% 99%, #0000 101%) 0
+      calc(50px / 2),
+    radial-gradient(29% 27% at bottom, #0000 83%, #364c59 85% 99%, #0000 101%) 0
+      calc(50px / -2) #25353e;
+  background-size: 100px 100px;
+}
+
 header {
   position: fixed;
   width: 100%;
@@ -390,4 +403,63 @@ hr {
 
 .menu-section .section:hover:nth-child(2n) .section-heading {
   color: var(--gold-light);
+}
+
+.about-section {
+  margin-top: 80px;
+}
+
+.about-section .hero-section {
+  background: url("./images/F_76979-1.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 75vh;
+
+  color: var(--off-white-brown);
+  text-shadow:
+    0px 0px 40px black,
+    0px 0px 40px black;
+
+  padding: 30px;
+  justify-content: end;
+  align-items: end;
+  text-align: right;
+}
+
+.about-section .section:nth-child(2n) {
+  width: 85%;
+  margin: 25px auto;
+}
+
+.menu-section .section:nth-child(2n) .text-area {
+  display: flex;
+  gap: 15px;
+}
+
+.about-section .text-area {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-section .section:hover .section-heading {
+  color: var(--gold-light);
+}
+
+.about-section .section {
+  margin-top: 80px;
+  color: red;
+}
+
+footer {
+  width: 100%;
+  background-color: var(--base-color-slight-dark);
+  color: var(--off-white);
+  padding: 15px;
+  text-align: center;
+
+  margin-top: 15px;
+}
+
+footer a {
+  color: var(--off-white-brown);
 }
